@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+  h1= title
+  p Welcome to #{title}
+  footer 
+    p
+      | Gostou do meu site ?
+      
+ ul 
+  for title in titles
+    li.listenItem(class= title) #{title}
+    description: #{description}
+    completed: #{completed} 
+     
+  else 
+   p No tasks found 
+
